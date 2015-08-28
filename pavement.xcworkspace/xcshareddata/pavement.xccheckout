@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0B098C50-2039-4DF1-A009-C1DA5126F41E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>pavement</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D48183A68D7060E4C57039CC9E2CC05C6C26EC7B</key>
+		<string>github.com:strangerloops/pavement.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>pavement_ios/pavement.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D48183A68D7060E4C57039CC9E2CC05C6C26EC7B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:strangerloops/pavement.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D48183A68D7060E4C57039CC9E2CC05C6C26EC7B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D48183A68D7060E4C57039CC9E2CC05C6C26EC7B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>project_pavement</string>
+		</dict>
+	</array>
+</dict>
+</plist>
