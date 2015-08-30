@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A0DE97703B4D0AF5FEF940C1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FC2ED4FA00FA2837EF9FF1C /* libPods.a */; };
 		AA19DDFC1B8E962300765940 /* Reading.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA19DDFB1B8E962300765940 /* Reading.swift */; };
+		AACC427E1B90BF19001DDF91 /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACC427D1B90BF19001DDF91 /* Ride.swift */; };
 		AADEBD5F1B7FB02B00CDE27E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADEBD5E1B7FB02B00CDE27E /* AppDelegate.swift */; };
 		AADEBD611B7FB02B00CDE27E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADEBD601B7FB02B00CDE27E /* ViewController.swift */; };
 		AADEBD661B7FB02B00CDE27E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AADEBD651B7FB02B00CDE27E /* Images.xcassets */; };
@@ -34,6 +35,7 @@
 		8958F9401569E790DD9D8970 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		AA19DDFB1B8E962300765940 /* Reading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reading.swift; sourceTree = "<group>"; };
 		AA19DDFD1B8E965F00765940 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		AACC427D1B90BF19001DDF91 /* Ride.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
 		AADEBD591B7FB02B00CDE27E /* pavement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pavement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AADEBD5D1B7FB02B00CDE27E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AADEBD5E1B7FB02B00CDE27E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				AADEBD601B7FB02B00CDE27E /* ViewController.swift */,
 				AAF069431B892EB000ED2233 /* Sensor.swift */,
 				AA19DDFB1B8E962300765940 /* Reading.swift */,
+				AACC427D1B90BF19001DDF91 /* Ride.swift */,
 				AA19DDFD1B8E965F00765940 /* Header.h */,
 				AADEBD651B7FB02B00CDE27E /* Images.xcassets */,
 				AADEBD671B7FB02B00CDE27E /* LaunchScreen.xib */,
@@ -286,6 +289,7 @@
 				AADEBD611B7FB02B00CDE27E /* ViewController.swift in Sources */,
 				AAF069441B892EB000ED2233 /* Sensor.swift in Sources */,
 				AA19DDFC1B8E962300765940 /* Reading.swift in Sources */,
+				AACC427E1B90BF19001DDF91 /* Ride.swift in Sources */,
 				AADEBD5F1B7FB02B00CDE27E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,7 +413,7 @@
 				INFOPLIST_FILE = pavement/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/michaelhassin/code/_nonTW/pavement/pavement/Header.h;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/michaelhassin/code/_nonTW/project_pavement/pavement_ios/pavement/Header.h;
 			};
 			name = Debug;
 		};
@@ -421,7 +425,7 @@
 				INFOPLIST_FILE = pavement/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/michaelhassin/code/_nonTW/pavement/pavement/Header.h;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/michaelhassin/code/_nonTW/project_pavement/pavement_ios/pavement/Header.h;
 			};
 			name = Release;
 		};

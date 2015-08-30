@@ -19,11 +19,21 @@ class ViewController: UIViewController {
         sensor = Sensor()
         running = false
         let bounds = view.bounds
-        button = UIButton.buttonWithType(.System) as! UIButton
-        button.frame = CGRectMake(100, 100, 100, 50)
-        button.setTitle("start", forState: .Normal)
-        button.addTarget(self, action: Selector("toggle"), forControlEvents: .TouchUpInside)
-        view.addSubview(button)
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        if defaults.integerForKey("calibrationRide") != 0 {
+            button = UIButton.buttonWithType(.System) as! UIButton
+            button.frame = CGRectMake(100, 100, 100, 50)
+            button.setTitle("start", forState: .Normal)
+            button.addTarget(self, action: Selector("toggle"), forControlEvents: .TouchUpInside)
+            view.addSubview(button)
+        } else {
+            button = UIButton.buttonWithType(.System) as! UIButton
+            button.frame = CGRectMake(100, 100, 100, 50)
+            button.setTitle("calibrate", forState: .Normal)
+            button.addTarget(self, action: Selector("toggle"), forControlEvents: .TouchUpInside)
+            view.addSubview(button)
+        }
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -44,7 +54,11 @@ class ViewController: UIViewController {
 
     func go(){
         running = true
-        button.setTitle("stop", forState: .Normal)
+        if NSUserDefaults.standardUserDefaults().integerForKey("calibrationRide") != 0 {
+            button.setTitle("stop", forState: .Normal)
+        } else {
+            button.setTitle("done calibrating", forState: .Normal)
+        }
         sensor.go()
     }
     

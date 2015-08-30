@@ -6,8 +6,6 @@
 //  Copyright (c) 2015 strangerware. All rights reserved.
 //
 
-import UIKit
-
 @objc(Reading) class Reading: NSRRemoteObject {
    
     var startLat: NSNumber?
@@ -15,5 +13,11 @@ import UIKit
     var endLat: NSNumber?
     var endLon: NSNumber?
     var acceleration: NSString?
-
+    var startTime: String?
+    var endTime: String?
+    var ride: Ride?
+    
+    override func shouldOnlySendIDKeyForNestedObjectProperty(property: String!) -> Bool {
+        return property == "ride"
+    }
 }
