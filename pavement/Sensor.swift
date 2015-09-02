@@ -16,7 +16,7 @@ class Sensor: NSObject, CLLocationManagerDelegate {
     let motionManager = CMMotionManager()
     var motionData: [String] = []
     var previousLocation: CLLocation?
-    var previousEndTime: String?
+    var previousEndTime: NSNumber?
     var ride: Ride?
 
     let UPDATE_INTERVAL = 0.005
@@ -30,7 +30,7 @@ class Sensor: NSObject, CLLocationManagerDelegate {
 
     func go() {
         ride = Ride()
-        ride!.startTime = NSDate().description
+        ride!.startTime = NSDate().timeIntervalSince1970
         ride!.remoteCreateAsync { error in
             if error != nil {
                 println("oops")
@@ -44,6 +44,7 @@ class Sensor: NSObject, CLLocationManagerDelegate {
     func beginPollingLocation(){
         locationManager.requestAlwaysAuthorization()
         if CLLocationManager.locationServicesEnabled() {
+            previousEndTime = NSDate().timeIntervalSince1970
             locationManager.delegate = self
             locationManager.distanceFilter = 0.00001
             locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
@@ -64,12 +65,11 @@ class Sensor: NSObject, CLLocationManagerDelegate {
     
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
         let newLocation = locations.last as! CLLocation
-        let now = NSDate().description
+        let now = NSDate().timeIntervalSince1970
         if let oldLocation = previousLocation {
             let acceleration = (motionData.reduce("", combine: {($0 as String) + ", " + $1}) as NSString)
             if acceleration.length > 1 {
                 let reading = Reading()
-                println(ride!.remoteID)
                 reading.ride = ride
                 reading.startTime = previousEndTime
                 reading.endTime = now
@@ -78,6 +78,7 @@ class Sensor: NSObject, CLLocationManagerDelegate {
                 reading.endLat = NSNumberFormatter().numberFromString("\(newLocation.coordinate.latitude)")!.floatValue
                 reading.endLon = NSNumberFormatter().numberFromString("\(newLocation.coordinate.longitude)")!.floatValue
                 reading.acceleration = acceleration.substringWithRange(NSRange(location: 2, length: acceleration.length - 2))
+                // destroy garbage by checking length
                 sendData(reading)
             }
         }
@@ -93,7 +94,7 @@ class Sensor: NSObject, CLLocationManagerDelegate {
         if ride != nil {
             let defaults = NSUserDefaults.standardUserDefaults()
             let calibrated = defaults.integerForKey("calibrationRide") != 0
-            ride!.endTime = NSDate().description
+            ride!.endTime = NSDate().timeIntervalSince1970
             if calibrated {
                ride!.calibrationID = defaults.integerForKey("calibrationRide")
             }

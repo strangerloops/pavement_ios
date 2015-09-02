@@ -23,13 +23,13 @@ class ViewController: UIViewController {
         let defaults = NSUserDefaults.standardUserDefaults()
         if defaults.integerForKey("calibrationRide") != 0 {
             button = UIButton.buttonWithType(.System) as! UIButton
-            button.frame = CGRectMake(100, 100, 100, 50)
+            button.frame = CGRectMake(100, 100, 100, 100)
             button.setTitle("start", forState: .Normal)
             button.addTarget(self, action: Selector("toggle"), forControlEvents: .TouchUpInside)
             view.addSubview(button)
         } else {
             button = UIButton.buttonWithType(.System) as! UIButton
-            button.frame = CGRectMake(100, 100, 100, 50)
+            button.frame = CGRectMake(100, 100, 100, 100)
             button.setTitle("calibrate", forState: .Normal)
             button.addTarget(self, action: Selector("toggle"), forControlEvents: .TouchUpInside)
             view.addSubview(button)

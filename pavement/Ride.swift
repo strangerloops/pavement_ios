@@ -7,7 +7,7 @@
 //
 
 @objc(Ride) class Ride: NSRRemoteObject {
-    var startTime: String?
-    var endTime: String?
+    var startTime: NSNumber?
+    var endTime: NSNumber?
     var calibrationID: NSNumber?
 }

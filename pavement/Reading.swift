@@ -13,8 +13,8 @@
     var endLat: NSNumber?
     var endLon: NSNumber?
     var acceleration: NSString?
-    var startTime: String?
-    var endTime: String?
+    var startTime: NSNumber?
+    var endTime: NSNumber?
     var ride: Ride?
     
     override func shouldOnlySendIDKeyForNestedObjectProperty(property: String!) -> Bool {
