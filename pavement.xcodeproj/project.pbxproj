@@ -9,15 +9,19 @@
 /* Begin PBXBuildFile section */
 		A0DE97703B4D0AF5FEF940C1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FC2ED4FA00FA2837EF9FF1C /* libPods.a */; };
 		AA19DDFC1B8E962300765940 /* Reading.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA19DDFB1B8E962300765940 /* Reading.swift */; };
+		AA634EC61BD6E20A00D3534F /* SineCurveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA634EC51BD6E20A00D3534F /* SineCurveView.swift */; settings = {ASSET_TAGS = (); }; };
+		AA965F6E1BCDB069008D03FC /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA965F6D1BCDB069008D03FC /* Raleway-Regular.ttf */; settings = {ASSET_TAGS = (); }; };
+		AACAC6A81BC994CC001A0602 /* GlobalConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACAC6A71BC994CC001A0602 /* GlobalConfig.swift */; };
 		AACC427E1B90BF19001DDF91 /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACC427D1B90BF19001DDF91 /* Ride.swift */; };
 		AADEBD5F1B7FB02B00CDE27E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADEBD5E1B7FB02B00CDE27E /* AppDelegate.swift */; };
-		AADEBD611B7FB02B00CDE27E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADEBD601B7FB02B00CDE27E /* ViewController.swift */; };
+		AADEBD611B7FB02B00CDE27E /* PavementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADEBD601B7FB02B00CDE27E /* PavementViewController.swift */; };
 		AADEBD661B7FB02B00CDE27E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AADEBD651B7FB02B00CDE27E /* Images.xcassets */; };
 		AADEBD691B7FB02B00CDE27E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AADEBD671B7FB02B00CDE27E /* LaunchScreen.xib */; };
 		AADEBD751B7FB02B00CDE27E /* pavementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADEBD741B7FB02B00CDE27E /* pavementTests.swift */; };
 		AAF069441B892EB000ED2233 /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF069431B892EB000ED2233 /* Sensor.swift */; };
 		AAF069461B892F1A00ED2233 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAF069451B892F1A00ED2233 /* CoreLocation.framework */; };
 		AAF069481B89301C00ED2233 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAF069471B89301C00ED2233 /* CoreMotion.framework */; };
+		AAFAD7731BE9166F0043E9F0 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFAD7721BE9166F0043E9F0 /* StatsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +39,14 @@
 		8958F9401569E790DD9D8970 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		AA19DDFB1B8E962300765940 /* Reading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reading.swift; sourceTree = "<group>"; };
 		AA19DDFD1B8E965F00765940 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		AA634EC51BD6E20A00D3534F /* SineCurveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SineCurveView.swift; sourceTree = "<group>"; };
+		AA965F6D1BCDB069008D03FC /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		AACAC6A71BC994CC001A0602 /* GlobalConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConfig.swift; sourceTree = "<group>"; };
 		AACC427D1B90BF19001DDF91 /* Ride.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
 		AADEBD591B7FB02B00CDE27E /* pavement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pavement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AADEBD5D1B7FB02B00CDE27E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AADEBD5E1B7FB02B00CDE27E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AADEBD601B7FB02B00CDE27E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AADEBD601B7FB02B00CDE27E /* PavementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PavementViewController.swift; sourceTree = "<group>"; };
 		AADEBD651B7FB02B00CDE27E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AADEBD681B7FB02B00CDE27E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		AADEBD6E1B7FB02B00CDE27E /* pavementTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pavementTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +55,7 @@
 		AAF069431B892EB000ED2233 /* Sensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sensor.swift; sourceTree = "<group>"; };
 		AAF069451B892F1A00ED2233 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		AAF069471B89301C00ED2233 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		AAFAD7721BE9166F0043E9F0 /* StatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 		DB566DEF236912B93E28A78A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,8 +113,12 @@
 		AADEBD5B1B7FB02B00CDE27E /* pavement */ = {
 			isa = PBXGroup;
 			children = (
+				AA965F6D1BCDB069008D03FC /* Raleway-Regular.ttf */,
 				AADEBD5E1B7FB02B00CDE27E /* AppDelegate.swift */,
-				AADEBD601B7FB02B00CDE27E /* ViewController.swift */,
+				AAFAD7721BE9166F0043E9F0 /* StatsViewController.swift */,
+				AACAC6A71BC994CC001A0602 /* GlobalConfig.swift */,
+				AADEBD601B7FB02B00CDE27E /* PavementViewController.swift */,
+				AA634EC51BD6E20A00D3534F /* SineCurveView.swift */,
 				AAF069431B892EB000ED2233 /* Sensor.swift */,
 				AA19DDFB1B8E962300765940 /* Reading.swift */,
 				AACC427D1B90BF19001DDF91 /* Ride.swift */,
@@ -198,11 +210,14 @@
 		AADEBD511B7FB02B00CDE27E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = strangerware;
 				TargetAttributes = {
 					AADEBD581B7FB02B00CDE27E = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = HW89D56T9X;
 					};
 					AADEBD6D1B7FB02B00CDE27E = {
 						CreatedOnToolsVersion = 6.4;
@@ -235,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AADEBD691B7FB02B00CDE27E /* LaunchScreen.xib in Resources */,
+				AA965F6E1BCDB069008D03FC /* Raleway-Regular.ttf in Resources */,
 				AADEBD661B7FB02B00CDE27E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,8 +302,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AADEBD611B7FB02B00CDE27E /* ViewController.swift in Sources */,
+				AADEBD611B7FB02B00CDE27E /* PavementViewController.swift in Sources */,
 				AAF069441B892EB000ED2233 /* Sensor.swift in Sources */,
+				AAFAD7731BE9166F0043E9F0 /* StatsViewController.swift in Sources */,
+				AA634EC61BD6E20A00D3534F /* SineCurveView.swift in Sources */,
+				AACAC6A81BC994CC001A0602 /* GlobalConfig.swift in Sources */,
 				AA19DDFC1B8E962300765940 /* Reading.swift in Sources */,
 				AACC427E1B90BF19001DDF91 /* Ride.swift in Sources */,
 				AADEBD5F1B7FB02B00CDE27E /* AppDelegate.swift in Sources */,
@@ -345,6 +364,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -410,9 +430,14 @@
 			baseConfigurationReference = 8958F9401569E790DD9D8970 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = pavement/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "str.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = /Users/michaelhassin/code/_nonTW/project_pavement/pavement_ios/pavement/Header.h;
 			};
 			name = Debug;
@@ -422,9 +447,14 @@
 			baseConfigurationReference = DB566DEF236912B93E28A78A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = pavement/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "str.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = /Users/michaelhassin/code/_nonTW/project_pavement/pavement_ios/pavement/Header.h;
 			};
 			name = Release;
@@ -443,6 +473,7 @@
 				);
 				INFOPLIST_FILE = pavementTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "str.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pavement.app/pavement";
 			};
@@ -458,6 +489,7 @@
 				);
 				INFOPLIST_FILE = pavementTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "str.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pavement.app/pavement";
 			};

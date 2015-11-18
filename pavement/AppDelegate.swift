@@ -15,13 +15,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        NSRConfig.defaultConfig().rootURL = NSURL(string:"https://project-pavement.herokuapp.com/")
-//        NSRConfig.defaultConfig().basicAuthUsername = "please commit a crime"
-//        NSRConfig.defaultConfig().basicAuthPassword = "gracious me and mine, a crime you say?"
+        UIApplication.sharedApplication().idleTimerDisabled = true
+                
+        NSRConfig.defaultConfig().rootURL = NSURL(string: GlobalConfig.rootAppURL())
+        NSRConfig.defaultConfig().basicAuthUsername = "peemster"
+        NSRConfig.defaultConfig().basicAuthPassword = "halsadick"
         NSRConfig.defaultConfig().configureToRailsVersion(NSRRailsVersion.Version3)
         
+        let tabs = UITabBarController()
+        let pavementView = PavementViewController()
+        let statsView = StatsViewController()
+        tabs.viewControllers = [pavementView, statsView]
+        pavementView.tabBarItem = UITabBarItem(title: "Pavement", image: UIImage(named: "Marker"), tag: 0)
+        statsView.tabBarItem = UITabBarItem(title: "Stats",       image: UIImage(named: "Tags")  , tag: 1)
+    
+        let defaults = NSUserDefaults.standardUserDefaults()
+        if !defaults.dictionaryRepresentation().keys.contains("totalDistanceMeters"){
+            defaults.setDouble(0.0, forKey: "totalDistanceMeters")
+        }
+        
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        self.window!.rootViewController = ViewController()
+        self.window!.rootViewController = tabs
         self.window!.backgroundColor = UIColor.whiteColor()
         self.window!.makeKeyAndVisible()
 
