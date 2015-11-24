@@ -19,7 +19,6 @@ class PavementViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let screenHeight = self.view.frame.size.height
         let screenWidth = self.view.frame.size.width
         
@@ -61,25 +60,11 @@ class PavementViewController: UIViewController {
         sensor.stop()
     }
     
-//    func drawSine(amplitude: Float){
-//        eraseSine()
-//        let screenHeight = self.view.frame.size.height
-//        let screenWidth = self.view.frame.size.width
-//        sineWave = SineCurveView(frame: CGRectMake(screenWidth * 0.1, screenHeight * 0.1, (screenWidth * 0.8), (screenHeight * 0.1)), amplitude: amplitude)
-//        view.addSubview(sineWave!)
-//    }
-    
-//    func eraseSine(){
-//        if let wave = sineWave {
-//            wave.removeFromSuperview()
-//            sineWave = nil
-//        }
-//    }
-    
     func updateButtonColor(roughness: Float){
-        let red = CGFloat(0.0)
+        let adjusted = abs(roughness - 1.0) * 2.5
+        let red = CGFloat(adjusted)
         let green = CGFloat(0.0)
-        let blue = CGFloat(0.0)
+        let blue = CGFloat(1.0 - adjusted)
         let color = UIColor(red: red, green: green, blue: blue, alpha: 1.0)
         button.setImage(tintImage(stopImage, withColor: color), forState: .Normal)
     }

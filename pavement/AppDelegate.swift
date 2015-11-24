@@ -26,8 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let pavementView = PavementViewController()
         let statsView = StatsViewController()
         tabs.viewControllers = [pavementView, statsView]
-        pavementView.tabBarItem = UITabBarItem(title: "Pavement", image: UIImage(named: "Marker"), tag: 0)
-        statsView.tabBarItem = UITabBarItem(title: "Stats",       image: UIImage(named: "Tags")  , tag: 1)
+        pavementView.tabBarItem = UITabBarItem(title: "Pavement", image: UIImage(named: "pavement-tab"), tag: 0)
+        statsView.tabBarItem = UITabBarItem(title: "Stats",       image: UIImage(named: "stats-tab")  , tag: 1)
     
         let defaults = NSUserDefaults.standardUserDefaults()
         if !defaults.dictionaryRepresentation().keys.contains("totalDistanceMeters"){

@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:pavement.xcodeproj">
+      location = "group:/Users/michaelhassin/code/_nonTW/project_pavement/pavement_ios/Pavement.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

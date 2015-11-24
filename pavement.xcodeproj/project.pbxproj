@@ -43,13 +43,13 @@
 		AA965F6D1BCDB069008D03FC /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
 		AACAC6A71BC994CC001A0602 /* GlobalConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConfig.swift; sourceTree = "<group>"; };
 		AACC427D1B90BF19001DDF91 /* Ride.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
-		AADEBD591B7FB02B00CDE27E /* pavement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pavement.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AADEBD591B7FB02B00CDE27E /* Pavement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pavement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AADEBD5D1B7FB02B00CDE27E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AADEBD5E1B7FB02B00CDE27E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AADEBD601B7FB02B00CDE27E /* PavementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PavementViewController.swift; sourceTree = "<group>"; };
 		AADEBD651B7FB02B00CDE27E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AADEBD681B7FB02B00CDE27E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		AADEBD6E1B7FB02B00CDE27E /* pavementTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pavementTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AADEBD6E1B7FB02B00CDE27E /* Pavement.temp_caseinsensitive_renameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pavement.temp_caseinsensitive_renameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AADEBD731B7FB02B00CDE27E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AADEBD741B7FB02B00CDE27E /* pavementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pavementTests.swift; sourceTree = "<group>"; };
 		AAF069431B892EB000ED2233 /* Sensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sensor.swift; sourceTree = "<group>"; };
@@ -104,8 +104,8 @@
 		AADEBD5A1B7FB02B00CDE27E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AADEBD591B7FB02B00CDE27E /* pavement.app */,
-				AADEBD6E1B7FB02B00CDE27E /* pavementTests.xctest */,
+				AADEBD591B7FB02B00CDE27E /* Pavement.app */,
+				AADEBD6E1B7FB02B00CDE27E /* Pavement.temp_caseinsensitive_renameTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,9 +167,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AADEBD581B7FB02B00CDE27E /* pavement */ = {
+		AADEBD581B7FB02B00CDE27E /* Pavement */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AADEBD781B7FB02B00CDE27E /* Build configuration list for PBXNativeTarget "pavement" */;
+			buildConfigurationList = AADEBD781B7FB02B00CDE27E /* Build configuration list for PBXNativeTarget "Pavement" */;
 			buildPhases = (
 				96008FE82BBEF2F625FD6964 /* Check Pods Manifest.lock */,
 				AADEBD551B7FB02B00CDE27E /* Sources */,
@@ -181,9 +181,9 @@
 			);
 			dependencies = (
 			);
-			name = pavement;
+			name = Pavement;
 			productName = pavement;
-			productReference = AADEBD591B7FB02B00CDE27E /* pavement.app */;
+			productReference = AADEBD591B7FB02B00CDE27E /* Pavement.app */;
 			productType = "com.apple.product-type.application";
 		};
 		AADEBD6D1B7FB02B00CDE27E /* pavementTests */ = {
@@ -201,7 +201,7 @@
 			);
 			name = pavementTests;
 			productName = pavementTests;
-			productReference = AADEBD6E1B7FB02B00CDE27E /* pavementTests.xctest */;
+			productReference = AADEBD6E1B7FB02B00CDE27E /* Pavement.temp_caseinsensitive_renameTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -218,6 +218,14 @@
 					AADEBD581B7FB02B00CDE27E = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = HW89D56T9X;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					AADEBD6D1B7FB02B00CDE27E = {
 						CreatedOnToolsVersion = 6.4;
@@ -225,7 +233,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AADEBD541B7FB02B00CDE27E /* Build configuration list for PBXProject "pavement" */;
+			buildConfigurationList = AADEBD541B7FB02B00CDE27E /* Build configuration list for PBXProject "Pavement" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -238,7 +246,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AADEBD581B7FB02B00CDE27E /* pavement */,
+				AADEBD581B7FB02B00CDE27E /* Pavement */,
 				AADEBD6D1B7FB02B00CDE27E /* pavementTests */,
 			);
 		};
@@ -326,7 +334,7 @@
 /* Begin PBXTargetDependency section */
 		AADEBD701B7FB02B00CDE27E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AADEBD581B7FB02B00CDE27E /* pavement */;
+			target = AADEBD581B7FB02B00CDE27E /* Pavement */;
 			targetProxy = AADEBD6F1B7FB02B00CDE27E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -436,7 +444,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "str.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Pavement;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = /Users/michaelhassin/code/_nonTW/project_pavement/pavement_ios/pavement/Header.h;
 			};
@@ -453,7 +461,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "str.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Pavement;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = /Users/michaelhassin/code/_nonTW/project_pavement/pavement_ios/pavement/Header.h;
 			};
@@ -474,8 +482,8 @@
 				INFOPLIST_FILE = pavementTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "str.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pavement.app/pavement";
+				PRODUCT_NAME = Pavement.temp_caseinsensitive_renameTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pavement.temp_caseinsensitive_rename.app/Pavement.temp_caseinsensitive_rename";
 			};
 			name = Debug;
 		};
@@ -490,15 +498,15 @@
 				INFOPLIST_FILE = pavementTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "str.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pavement.app/pavement";
+				PRODUCT_NAME = Pavement.temp_caseinsensitive_renameTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pavement.temp_caseinsensitive_rename.app/Pavement.temp_caseinsensitive_rename";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AADEBD541B7FB02B00CDE27E /* Build configuration list for PBXProject "pavement" */ = {
+		AADEBD541B7FB02B00CDE27E /* Build configuration list for PBXProject "Pavement" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AADEBD761B7FB02B00CDE27E /* Debug */,
@@ -507,7 +515,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AADEBD781B7FB02B00CDE27E /* Build configuration list for PBXNativeTarget "pavement" */ = {
+		AADEBD781B7FB02B00CDE27E /* Build configuration list for PBXNativeTarget "Pavement" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AADEBD791B7FB02B00CDE27E /* Debug */,

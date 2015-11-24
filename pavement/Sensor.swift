@@ -38,7 +38,9 @@ class Sensor: NSObject, CLLocationManagerDelegate {
     }
     
     func go() {
-        
+        if #available(iOS 9.0, *) {
+            locationManager.allowsBackgroundLocationUpdates = true
+        }
         delegate.button.enabled = false
         locationManager.activityType = CLActivityType.AutomotiveNavigation
         // causes readings to snap to roads, which i can't decide if we want or not (i think we want it)
@@ -92,7 +94,7 @@ class Sensor: NSObject, CLLocationManagerDelegate {
     
     func beginPollingMotion(){
         motionManager.startAccelerometerUpdatesToQueue(NSOperationQueue.mainQueue()) { (data: CMAccelerometerData?, error: NSError?) -> Void in
-        
+            
             func square(number: Double) -> Double {
                 return number * number
             }
@@ -175,7 +177,6 @@ class Sensor: NSObject, CLLocationManagerDelegate {
     }
     
     func stop() {
-//        delegate.eraseSine()
         clearAccelerationArrays()
         angleX = 0.0
         angleY = 0.0
@@ -204,12 +205,9 @@ class Sensor: NSObject, CLLocationManagerDelegate {
     }
 
     func sendData(reading: Reading){
-        // TODO: no if false!
-        if false {
-            reading.remoteCreateAsync { (error) -> Void in
-                if error != nil {
-                    print("error: \(error!)")
-                }
+        reading.remoteCreateAsync { (error) -> Void in
+            if error != nil {
+                print("error: \(error!)")
             }
         }
     }
