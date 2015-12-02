@@ -32,6 +32,7 @@ class StatsViewController: UIViewController {
         recalLabel.text = "Press this button when your pavement measuring setup changes, such as if you switch your bike, tires or phone mount.\n\nRecalibrating will preserve your record of miles measured."
         recalLabel.numberOfLines = 0
         recalLabel.textAlignment  = .Left
+        recalLabel.font = UIFont.systemFontOfSize(12.0)
         let recalButton = UIButton(type: .Custom)
         recalButton.frame = CGRectMake((screenWidth/2) - (recalImage.size.width/4), (screenHeight * 0.6) - (recalImage.size.height / 4), recalImage.size.width / 2, recalImage.size.height / 2)
         recalButton.setImage(recalImage, forState: .Normal)
