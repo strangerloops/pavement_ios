@@ -27,8 +27,6 @@ class Sensor: NSObject, CLLocationManagerDelegate {
     let stopImage = UIImage(named: "stop-button")
     var delegate: PavementViewController
 
-    let UPDATE_INTERVAL = 0.005 // seconds
-
     init(delegate: PavementViewController){
         self.delegate = delegate
     }
